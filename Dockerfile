@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.346.3-lts-jdk11
+FROM jenkins/jenkins:2.346.2-lts-jdk11
 
 USER root
 RUN echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list
@@ -34,4 +34,4 @@ RUN youtube-dl -U
 
 # drop back to the regular jenkins user - good practice
 USER jenkins
-RUN jenkins-plugin-cli --plugins "blueocean:1.24.6 docker-workflow:1.26"
+RUN jenkins-plugin-cli --plugins "blueocean:1.25.6 docker-workflow:1.29"
