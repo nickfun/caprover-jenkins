@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.346.2-lts-jdk11
+FROM jenkins/jenkins:2.387.1-lts-jdk11
 
 USER root
 RUN echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list
